@@ -1,0 +1,11 @@
+services:
+  web:
+    container_name: web-app
+    build:
+      context: .
+      target: dependencies
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./:/home/node/app"
+    command: npm run dev
