@@ -8,4 +8,3 @@ services:
       - "8080:8080"
     volumes:
       - "./:/home/node/app"
-    command: npm run dev

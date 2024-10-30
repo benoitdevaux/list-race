@@ -12,4 +12,4 @@ USER root
 RUN npm install
 COPY --chown=node:node . .
 
-CMD [ "dumb-init", "node", "server.js" ]
+CMD npm run dev
