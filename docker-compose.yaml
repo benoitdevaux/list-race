@@ -1,6 +1,6 @@
 services:
   web:
-    container_name: energy
+    container_name: list-race
     build:
       context: .
       target: dependencies

@@ -50,17 +50,17 @@ let config = {
                 use: cssLoaders,
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|gif|svg)$/,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'img/' + (dev ? '[name][ext]' : '[name].[hash:8][ext]'),
+                    filename: 'images/' + (dev ? '[name][ext]' : '[name].[hash:8][ext]'),
                 }
             },
             {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'font/' + (dev ? '[name][ext]' : '[name].[hash:8][ext]'),
+                    filename: 'fonts/' + (dev ? '[name][ext]' : '[name].[hash:8][ext]'),
                 }
             }
         ]
