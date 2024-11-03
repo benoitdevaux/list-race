@@ -2,10 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>List Race</title>
+    <link rel="stylesheet" href="@styles/flaticon.scss">
     <link rel="stylesheet" href="@styles/index.scss">
 </head>
 <body>
+    <header class="l-header">
+        <div class="o-tools">
+            <label>
+                <select name="language">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                    <option value="es">ES</option>
+                </select>
+            </label>
+            <label>
+                <select>
+                    <option value="euro">Euro</option>
+                    <option value="usd">USD</option>
+                </select>
+            </label>
+            <p>+33 04 12 34 56 78</p>
+            <a>Connexion</a>
+            <a>Inscription</a>
+        </div>
+        <div>
+            <a>
+                <span>List</span>
+                <span>Race</span>
+            </a>
+            <nav>
+                <a href="#">Accueil</a>
+                <a href="#">Fonctionnement</a>
+                <a href="#">Découverte</a>
+                <a href="#">Avis</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="o-home">
+        <div class="o-home__text">
+            <h1 class="o-text__title">Le meilleur endroit pour chercher et trouver<br />tout ce dont vous avez besoin</h1>
+            <p class="o-text__subtitle">Trouvez les meilleurs endroits, restaurants, hotels et bien plus en un seul clic</p>
+        </div>
+        <div class="o-home__search">
+            <div class="o-search__wrapper">
+                <div class="o-search__field">
+                    <label>
+                        Quoi ?
+                        <input placeholder="Ex: Hotel, Place, Nourriture, Voiture" />
+                    </label>
+                    <i class="flaticon-list-with-dots"></i>
+                </div>
+                <div class="o-search__field">
+                    <label>
+                        Où ?
+                        <input placeholder="Ex: Paris, Nancy, Toulouse">
+                        <i class="flaticon-gps-fixed-indicator"></i>
+                    </label>
+                </div>
+                <button class="o-search__button" type="submit">Rechercher<img src="@images/search.svg" alt="search"></button>
+            </div>
+        </div>
+        <div class="o-home__card">
+            <a class="o-card">
+                <i class=" o-card__icon flaticon-restaurant"></i>
+                <p class="o-card__title">Reastaurant</p>
+                <p class="o-card__text">150 éléments</p>
+            </a>
+            <a class="o-card">
+                <i class=" o-card__icon flaticon-travel"></i>
+                <p class="o-card__title">Destination</p>
+                <p class="o-card__text">214 éléments</p>
+            </a>
+            <a class="o-card">
+                <i class=" o-card__icon flaticon-building"></i>
+                <p class="o-card__title">Hotels</p>
+                <p class="o-card__text">185 éléments</p>
+            </a>
+            <a class="o-card">
+                <i class=" o-card__icon flaticon-pills"></i>
+                <p class="o-card__title">Santé</p>
+                <p class="o-card__text">200 éléments</p>
+            </a>
+            <a class="o-card">
+                <i class=" o-card__icon flaticon-transport"></i>
+                <p class="o-card__title">Véhicules</p>
+                <p class="o-card__text">120 éléments</p>
+            </a>
+        </div>
+    </div>
+    <div class="o-works">
+        <div class="o-works__text">
+            <h2 class="o-text__title">Fonctionnement</h2>
+            <p class="o-text__subtitle">Apprenez en plus sur le fonctionnement du site</p>
+        </div>
+        <div class="o-works__card">
+            <div class="o-card">
+                <div class="o-card__icon-wrapper">
+                    <i class="o-icon flaticon-lightbulb-idea"></i>
+                </div>
+                <p class="o-card__title">Recherchez</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae, cum doloribus facilis odit repellendus sunt.</p>
+                <a href="#" class="o-card__link">Voir plus</a>
+            </div>
+            <div class="o-card">
+                <div class="o-card__icon-wrapper">
+                    <i class="o-icon flaticon-networking"></i>
+                </div>
+                <p class="o-card__title">Choisissez</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae, cum doloribus facilis odit repellendus sunt.</p>
+                <a href="#" class="o-card__link">Voir plus</a>
+            </div>
+            <div class="o-card">
+                <div class="o-card__icon-wrapper">
+                    <i class="o-icon flaticon-location-on-road"></i>
+                </div>
+                <p class="o-card__title">Explorez</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae, cum doloribus facilis odit repellendus sunt.</p>
+                <a href="#" class="o-card__link">Voir plus</a>
+            </div>
+        </div>
+    </div>
+    <div class="o-explore">
+        <div class="o-explore__text">
+            <h2 class="o-text__title">Explorez</h2>
+            <p class="o-text__subtitle">Explorez de nouveaux endroits, de nouvelles culture et bien plus encore</p>
+        </div>
+    </div>
   <script src="@scripts/index.js"></script>
 </body>
 </html>
