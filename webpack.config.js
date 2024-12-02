@@ -23,6 +23,7 @@ let config = {
             '@styles': path.join(__dirname, 'src/assets/scss'),
             '@scripts': path.join(__dirname, 'src/assets/js'),
             '@images': path.join(__dirname, 'src/assets/images'),
+            '@fonts': path.join(__dirname, 'src/assets/fonts'),
         }
     },
     plugins: [
@@ -59,6 +60,7 @@ let config = {
             {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
                 type: 'asset/resource',
+                use: ["url-loader"],
                 generator: {
                     filename: 'fonts/' + (dev ? '[name][ext]' : '[name].[hash:8][ext]'),
                 }

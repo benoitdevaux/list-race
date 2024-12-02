@@ -1,7 +1,81 @@
+@use "@styles/mixin" as mixin;
+@use "@styles/variables" as var;
+
+@include mixin.fontface('Poppins', "@fonts/Poppins-Thin.ttf", 100, null, 'ttf');
+@include mixin.fontface('Poppins', "@fonts/Poppins-ExtraLight.ttf", 200, null, 'ttf');
+@include mixin.fontface('Poppins', "@fonts/Poppins-Light.ttf", 300, null, 'ttf');
+@include mixin.fontface('Poppins', "@fonts/Poppins-Regular.ttf", 400, null, 'ttf');
+@include mixin.fontface('Poppins', "@fonts/Poppins-Medium.ttf", 500, null, 'ttf');
+@include mixin.fontface('Poppins', "@fonts/Poppins-SemiBold.ttf", 600, null, ttf);
+@include mixin.fontface('Poppins', "@fonts/Poppins-Bold.ttf", 700, null, ttf);
+@include mixin.fontface('Poppins', "@fonts/Poppins-ExtraBold.ttf", 800, null, ttf);
+@include mixin.fontface('Poppins', "@fonts/Poppins-Black.ttf", 900, null, ttf);
+
+@include mixin.fontface('Poppins', "@fonts/Poppins-ThinItalic.ttf", 100, italic, ttf);
+@include mixin.fontface('Poppins', "@fonts/Poppins-ExtraLightItalic.ttf", 200, italic, ttf);
+@include mixin.fontface('Poppins', "@fonts/Poppins-LightItalic.ttf", 300, italic, ttf);
+@include mixin.fontface('Poppins', "@fonts/Poppins-Italic.ttf", 400, italic, ttf);
+@include mixin.fontface('Poppins', "@fonts/Poppins-MediumItalic.ttf", 500, italic, ttf);
+@include mixin.fontface('Poppins', "@fonts/Poppins-SemiBoldItalic.ttf", 600, italic, ttf);
+@include mixin.fontface('Poppins', "@fonts/Poppins-BoldItalic.ttf", 700, italic, ttf);
+@include mixin.fontface('Poppins', "@fonts/Poppins-ExtraBoldItalic.ttf", 800, italic, ttf);
+@include mixin.fontface('Poppins', "@fonts/Poppins-BlackItalic.ttf", 900, italic, ttf);
+
+
 html {
   font-size: 62.5%;
 }
 
 body {
   font-size: 1.6rem;
+  margin: 0;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+.o-tools {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .1rem solid var.$c-border;
+
+  &__wrapper {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &--right {
+      @extend .o-tools__wrapper;
+
+    }
+  }
+
+  &__item {
+    padding: 1rem 1.8rem;
+    border-right: .1rem solid var.$c-border;
+
+    &--right {
+      @extend .o-tools__item;
+    }
+
+    &--search {
+      @extend .o-tools__item;
+      padding: 1rem 1.8rem;
+    }
+  }
+}
+
+.o-item {
+  color: var.$c-tools;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: 'Poppins', 'sans-serif';
+
+  &--logo {
+    @extend .o-item;
+    font-size: 1.2rem;
+  }
+}
+
+.u-border-left {
+  border-left: .1rem solid var.$c-border;
 }

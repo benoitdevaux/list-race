@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <title>List Race</title>
     <link href="@styles/flaticon.scss" rel="stylesheet">
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
     <link href="@styles/index.scss" rel="stylesheet">
 </head>
 <body>
 <header class="l-header">
     <div class="o-tools">
-        <label>
-            <select name="language">
-                <option value="fr">FR</option>
-                <option value="en">EN</option>
-                <option value="es">ES</option>
-            </select>
-        </label>
-        <label>
-            <select>
-                <option value="euro">Euro</option>
-                <option value="usd">USD</option>
-            </select>
-        </label>
-        <p>+33 04 12 34 56 78</p>
-        <a>Connexion</a>
-        <a>Inscription</a>
+        <ul class="o-tools__wrapper">
+            <li class="o-tools__item">
+                <label>
+                    <select name="language">
+                        <option value="fr">FR</option>
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                    </select>
+                </label>
+            </li>
+            <li class="o-tools__item">
+                <label>
+                    <select>
+                        <option value="euro">Euro</option>
+                        <option value="usd">USD</option>
+                    </select>
+                </label>
+            </li>
+            <li class="o-tools__item--search">
+                <span class="lnr lnr-magnifier o-item--logo"></span>
+            </li>
+        </ul>
+        <ul class="o-tools__wrapper--right">
+            <li class="o-tools__item--right u-border-left">
+                <span class="o-item">+33 04 12 34 56 78</span>
+            </li>
+            <li class="o-tools__item--right">
+                <a href="#" class="o-item">Connexion</a>
+            </li>
+            <li class="o-tools__item--right">
+                <a href="#" class="o-item">Inscription</a>
+            </li>
+        </ul>
     </div>
     <div>
         <a>
@@ -338,7 +356,9 @@
                 <p class="o-info__author">Posté par <span>admin</span></p>
                 <p class="o-info__date">Mars 2018</p>
             </div>
-            <p class="o-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam beatae blanditiis corporis dolores ea, eaque eius esse facere impedit minima necessitatibus nostrum, nulla praesentium quas quo quos tempora, voluptates?</p>
+            <p class="o-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam beatae
+                blanditiis corporis dolores ea, eaque eius esse facere impedit minima necessitatibus nostrum, nulla
+                praesentium quas quo quos tempora, voluptates?</p>
         </div>
         <div class="o-card--news">
             <p class="o-card__title--news">Comment trouver votre endroit idéal plus rapidement</p>
@@ -347,7 +367,9 @@
                 <p class="o-info__author">Posté par <span>admin</span></p>
                 <p class="o-info__date">Mars 2018</p>
             </div>
-            <p class="o-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam beatae blanditiis corporis dolores ea, eaque eius esse facere impedit minima necessitatibus nostrum, nulla praesentium quas quo quos tempora, voluptates?</p>
+            <p class="o-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam beatae
+                blanditiis corporis dolores ea, eaque eius esse facere impedit minima necessitatibus nostrum, nulla
+                praesentium quas quo quos tempora, voluptates?</p>
         </div>
         <div class="o-card--news">
             <p class="o-card__title--news">Comment trouver votre endroit idéal plus rapidement</p>
@@ -356,7 +378,9 @@
                 <p class="o-info__author">Posté par <span>admin</span></p>
                 <p class="o-info__date">Mars 2018</p>
             </div>
-            <p class="o-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam beatae blanditiis corporis dolores ea, eaque eius esse facere impedit minima necessitatibus nostrum, nulla praesentium quas quo quos tempora, voluptates?</p>
+            <p class="o-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam beatae
+                blanditiis corporis dolores ea, eaque eius esse facere impedit minima necessitatibus nostrum, nulla
+                praesentium quas quo quos tempora, voluptates?</p>
         </div>
     </div>
 </section>
@@ -367,7 +391,7 @@
     </div>
     <div class="o-contact">
         <label>
-            <input class="o-contact__input" placeholder="Saisissez votre e-mail" />
+            <input class="o-contact__input" placeholder="Saisissez votre e-mail"/>
         </label>
         <button class="o-contact__button">Nous contacter</button>
     </div>

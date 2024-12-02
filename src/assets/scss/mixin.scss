@@ -1,0 +1,13 @@
+@mixin fontface($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  @font-face {
+    font-family: $name;
+    @if ($style != null) {
+      font-style: $style;
+    }
+    @if ($weight != null) {
+      font-weight: $weight;
+    }
+    src:
+      url($path) format('ttf');
+  }
+}
